@@ -1,5 +1,5 @@
 #!/bin/bash
-fot i in `cat /tmp/userdetails/users/users_list`
+for i in `cat /tmp/userdetails/users/users_list`
 do
 id $i
 if [ $? -eq 0 ]
