@@ -1,5 +1,5 @@
 #!/bin/bash
-dir=`pwd`
+dir=`pwd|awk -F "/" '{print "/"$2"/"$3}'`
 for i in `cat $dir/users/users_list`
 do
 id $i
